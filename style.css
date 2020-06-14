@@ -1,0 +1,30 @@
+html, body {
+	height: 100%;
+}
+#container {
+	height: 100%;
+	width: 100%;
+	background-color: red;
+}
+
+.triangle-up {
+	margin: auto;	/* centers */
+	width: 0px;
+	height: 20%;	/* distance from top */
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-bottom: 50px solid #555;	
+}
+.rectangle {
+	margin: auto;	/* centers */
+	height: 75px;	/* height of center */
+	width: 300px;	
+	background-color: #555;
+}
+.triangle-down {
+	margin: auto;	/* centers */
+	width: 0px;
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-top: 50px solid #555;
+}
