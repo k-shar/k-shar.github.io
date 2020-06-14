@@ -1,30 +1,45 @@
 html, body {
 	height: 100%;
 }
+h1 {
+	margin: auto;
+	text-align: center;
+	font-family: 'Share Tech Mono', Monospace;
+    font-size: 48px;
+}
+
+
 #container {
 	height: 100%;
 	width: 100%;
 	background-color: red;
 }
-
-.triangle-up {
+	
+/* variables for hexagon*/
+:root {
+	--K_color_main: #555;
+	--K_border: 150px solid transparent;
+	--K_border_points: 50px solid var(--K_color_main);
+}
+/* Start hexagon */
+#triangle-up, #triangle-down {
 	margin: auto;	/* centers */
 	width: 0px;
-	height: 20%;	/* distance from top */
-	border-left: 150px solid transparent;
-	border-right: 150px solid transparent;
-	border-bottom: 50px solid #555;	
+	border-left: var(--K_border);
+	border-right: var(--K_border);
 }
-.rectangle {
+#triangle-down {
+	border-top: var(--K_border_points);
+}
+#triangle-up {
+	height: 20%;	/* distance from top */
+	border-bottom: var(--K_border_points);	
+}
+
+#rectangle {
 	margin: auto;	/* centers */
 	height: 75px;	/* height of center */
 	width: 300px;	
-	background-color: #555;
+	background-color: var(--K_color_main);
 }
-.triangle-down {
-	margin: auto;	/* centers */
-	width: 0px;
-	border-left: 150px solid transparent;
-	border-right: 150px solid transparent;
-	border-top: 50px solid #555;
-}
+/* End hexagon */
