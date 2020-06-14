@@ -1,45 +1,86 @@
+:root {
+	--K_color_hexagon: #6F3100;
+	--K_color_rainbow_one: #8F5120;
+	--K_color_rainbow_two: #8F51F0;
+	--K_color_background: #391900;
+	--K_color_header: #6F311F;
+	--K_border: 35vw solid transparent;
+	--K_border_points: 10vw solid var(--K_color_hexagon);
+}
+
 html, body {
 	height: 100%;
+	background-color: var(--K_color_background);
+	font-family: 'Share Tech Mono', Monospace;
+	margin: 0px;
 }
+
 h1 {
 	margin: auto;
+    font-size: 10vw;
 	text-align: center;
-	font-family: 'Share Tech Mono', Monospace;
-    font-size: 48px;
+	padding: 4vw;
 }
 
+#header {
+	border-left: 15vw solid transparent;
+	border-right: 15vw solid transparent;
+	border-top: 15vw solid var(--K_color_header);
+}
 
-#container {
+#footer {
+	position: fixed;
+	bottom: 0;
+	width: 70vw;
+	border-left: 15vw solid transparent;
+	border-right: 15vw solid transparent;
+	border-bottom: 15vw solid var(--K_color_header);
+	z-index: 5;
+}
+
+.rainbow {
 	height: 100%;
-	width: 100%;
-	background-color: red;
+	position: absolute;
+	margin-top: -9vw;
+	z-index: 2;
 }
-	
-/* variables for hexagon*/
-:root {
-	--K_color_main: #555;
-	--K_border: 150px solid transparent;
-	--K_border_points: 50px solid var(--K_color_main);
+#rainbow_one {
+	width: 25vw;
+	background-color: var(--K_color_rainbow_one);
+	left: 25%;
+}
+#rainbow_two {
+	width: 25vw;
+	background-color: var(--K_color_rainbow_two);
+	float: left;
+	left: 50%;
+}
+
+#hexagon {
+	height: auto;
+	width: auto;
+	margin: 10vw;
 }
 /* Start hexagon */
+/* variables for hexagon*/
 #triangle-up, #triangle-down {
 	margin: auto;	/* centers */
 	width: 0px;
+	z-index: 3;
+	position: relative;
 	border-left: var(--K_border);
 	border-right: var(--K_border);
 }
-#triangle-down {
-	border-top: var(--K_border_points);
-}
-#triangle-up {
-	height: 20%;	/* distance from top */
-	border-bottom: var(--K_border_points);	
-}
-
+#triangle-down {border-top: var(--K_border_points);}
+#triangle-up {border-bottom: var(--K_border_points);}
 #rectangle {
 	margin: auto;	/* centers */
-	height: 75px;	/* height of center */
-	width: 300px;	
-	background-color: var(--K_color_main);
+	margin-bottom: -1px;
+	margin-top: -1px;
+	height: 20vw;	/* height of center */
+	width: 70vw;
+	background-color: var(--K_color_hexagon);
+	z-index: 3;
 }
 /* End hexagon */
+
