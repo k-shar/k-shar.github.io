@@ -1,9 +1,10 @@
 :root {
-	--K_color_hexagon: #6F3100;
-	--K_color_rainbow_one: #8F5120;
-	--K_color_rainbow_two: #8F51F0;
-	--K_color_background: #391900;
-	--K_color_header: #6F311F;
+	--K_color_background: #30384C;
+	--K_color_hexagon: #624227;
+	--K_color_rainbow_one: #0B2C2D;
+	--K_color_rainbow_two: #183A3B;
+	--K_color_header: #101A32;
+	--K_color_footer: #0B2C2D;
 	--K_border: 35vw solid transparent;
 	--K_border_points: 10vw solid var(--K_color_hexagon);
 }
@@ -31,10 +32,10 @@ h1 {
 #footer {
 	position: fixed;
 	bottom: 0;
-	width: 70vw;
-	border-left: 15vw solid transparent;
-	border-right: 15vw solid transparent;
-	border-bottom: 15vw solid var(--K_color_header);
+	width: 50vw;
+	border-left: 25vw solid transparent;
+	border-right: 25vw solid transparent;
+	border-bottom: 25vw solid var(--K_color_footer);
 	z-index: 5;
 }
 
