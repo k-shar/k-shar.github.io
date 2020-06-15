@@ -11,40 +11,90 @@
 }
 
 
+
+@keyframes backdrop {
+	from {background-color: var(--K_color_header) ;}
+	to {background-color: var(--K_color_background);}
+}
 html, body {
 	background-color: var(--K_color_background);
 	font-family: 'Share Tech Mono', Monospace;
 	margin: 0vw;
+	animation-name: r-three;
+	animation-duration: 7s;
 }
 
 
-/* Start Header and Footer*/
-#header, #footer {
+
+
+/* Start Header*/
+#header{
 	border-left: 5vw solid transparent;
 	border-right: 5vw solid transparent;
+	border-top: 10vh solid var(--K_color_header);
 }
-#header {border-top: 15vh solid var(--K_color_header);}
-#footer {border-bottom: 15vh solid var(--K_color_footer);}
-/* End Header and Footer*/
+/* End Header*/
+
+
 
 
 /* Start Hexagon */
+@keyframes hexagon {
+	from {margin-bottom: 0vh;};
+	to {margin-bottom: -3vh;}
+}
 #hexagon {
 	height: auto;
 	width: auto;
 	margin: auto;
-	margin-top: 10vh;
 	margin-bottom: -3vh;
+	animation-name: hexagon;
+	animation-duration: 6s;
 }
+
+/* Start Top and Bottom of Hex */
 #triangle-up, #triangle-down {
+	
 	margin: auto;	/* centers */
 	width: 0px;
 	position: relative;
 	border-left: 35vw solid transparent;
 	border-right: 35vw solid transparent;
 }
-#triangle-down {border-top: 5vh solid var(--K_color_hexagon);}
-#triangle-up {border-bottom: 5vh solid var(--K_color_hexagon);}
+
+@keyframes color-triangle-up {
+	from {border-bottom:0vh solid var(--K_color_header);}
+	to {border-bottom: 5vh solid var(--K_color_hexagon);}
+}
+#triangle-up {
+	border-bottom: 5vh solid var(--K_color_hexagon);
+	animation-name: color-triangle-up;
+	animation-duration: 4s;
+}
+
+@keyframes color-triangle-down {
+	from {border-top: 0vh solid var(--K_color_header);}
+	to {border-top: 5vh solid var(--K_color_hexagon);}
+}
+#triangle-down {
+	border-top: 5vh solid var(--K_color_hexagon);
+	animation-name: color-triangle-down;
+	animation-duration: 4s;
+}	
+/* End Top and Bottom of Hex */
+
+@keyframes rectangle {
+	from {background-color: var(--K_color_header);
+		color: var(--K_color_header);
+		}
+	to {background-color: var(--K_color_hexagon));
+		color: var(--K_color_hexagon);
+		}
+}
+@keyframes white-text{
+	from {color: var(--K_color_hexagon);};
+	to {color: #000000;};
+}
 #rectangle {
 	margin: auto;	/* centers */
 	margin-bottom: -1px;
@@ -52,36 +102,66 @@ html, body {
 	height: 10vh;	/* height of center */
 	width: 70vw;
 	background-color: var(--K_color_hexagon);
-	
     display: flex;
     font-size: 5vh;
 	text-align: center;
     align-items:center;
     justify-content:center;
-	
 	color: white;
 	outline-color: #0B2C2D;
 	outline-style: groove;
 	outline-width: 10px;
+	
+	animation: rectangle, white-text;
+	animation-duration:3s, 2s;
+	animation-delay:0s, 3s;
+	
 }
 /* End Hexagon */
 
 
+
+
 /* Start Rainbow*/
+@keyframes rainbow {
+	from {max-width: 40vw;}
+	to {max-width: 20vw;}
+}
 #rainbow_box {
-	margin:auto;
-	height: 43vh;
+	margin: auto;
+	height: 72vh;
 	max-width: 20vw;
+	animation-name: rainbow;
+	animation-duration: 4s;
 }
 .rainbow {
 	float: left;
 	width: 33.33%;
-	overflow: auto;
 	height: 100%;
+	border: 2px;
+	border-color: black;
 }
-#rainbow_one {background-color: var(--K_color_rainbow_one);}
-#rainbow_two {background-color: var(--K_color_rainbow_two);}
-#rainbow_three {background-color: var(--K_color_rainbow_three);}
+
+@keyframes r-one {
+	from {background-color: var(--K_color_header);};
+	to {var(--K_color_rainbow_one);}}
+#rainbow_one {background-color: var(--K_color_rainbow_one);
+	animation-name: r-one;
+	animation-duration: 7s;}
+
+@keyframes r-two {
+	from {background-color: var(--K_color_header);};
+	to {var(--K_color_rainbow_two);}}
+#rainbow_two {background-color: var(--K_color_rainbow_two);
+	animation-name: r-two;
+	animation-duration: 7s;}
+
+@keyframes r-three {
+	from {background-color: var(--K_color_header);};
+	to {var(--K_color_rainbow_three);}}
+#rainbow_three {background-color: var(--K_color_rainbow_three);
+	animation-name: r-three;
+	animation-duration: 7s;}
 /* End Rainbow*/
 
 
