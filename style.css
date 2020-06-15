@@ -13,34 +13,21 @@
 
 
 @keyframes backdrop {
-	from {background-color: var(--K_color_header) ;}
-	to {background-color: var(--K_color_background);}
+	from {background-color: var(--K_color_header);}
+	to {background-color: var(--K_color_background);;}
 }
 html, body {
 	background-color: var(--K_color_background);
 	font-family: 'Share Tech Mono', Monospace;
 	margin: 0vw;
-	animation-name: r-three;
+	animation-name: backdrop;
 	animation-duration: 7s;
 }
 
 
-
-
-/* Start Header*/
-#header{
-	border-left: 5vw solid transparent;
-	border-right: 5vw solid transparent;
-	border-top: 10vh solid var(--K_color_header);
-}
-/* End Header*/
-
-
-
-
 /* Start Hexagon */
 @keyframes hexagon {
-	from {margin-bottom: 0vh;};
+	from {margin-bottom: 0vh;}
 	to {margin-bottom: -3vh;}
 }
 #hexagon {
@@ -63,8 +50,8 @@ html, body {
 }
 
 @keyframes color-triangle-up {
-	from {border-bottom:0vh solid var(--K_color_header);}
-	to {border-bottom: 5vh solid var(--K_color_hexagon);}
+	from {border-bottom:0vh solid var(--K_color_header);;}
+	to {border-bottom: 5vh solid var(--K_color_hexagon);;}
 }
 #triangle-up {
 	border-bottom: 5vh solid var(--K_color_hexagon);
@@ -73,8 +60,8 @@ html, body {
 }
 
 @keyframes color-triangle-down {
-	from {border-top: 0vh solid var(--K_color_header);}
-	to {border-top: 5vh solid var(--K_color_hexagon);}
+	from {border-top: 0vh solid var(--K_color_header);;}
+	to {border-top: 5vh solid var(--K_color_hexagon);;}
 }
 #triangle-down {
 	border-top: 5vh solid var(--K_color_hexagon);
@@ -84,16 +71,22 @@ html, body {
 /* End Top and Bottom of Hex */
 
 @keyframes rectangle {
-	from {background-color: var(--K_color_header);
-		color: var(--K_color_header);
-		}
-	to {background-color: var(--K_color_hexagon));
+	from {
+		background-color: var(--K_color_header);;
+		color: var(--K_color_header);;
+			}
+	to {
+		background-color: var(--K_color_hexagon);;
 		color: var(--K_color_hexagon);
 		}
 }
 @keyframes white-text{
-	from {color: var(--K_color_hexagon);};
-	to {color: #000000;};
+	from {color: var(--K_color_hexagon);}
+	to {color: #000000;}
+}
+@keyframes border {
+	from {outline-color: var(--K_color_hexagon);;}
+	to {outline-color: red;}
 }
 #rectangle {
 	margin: auto;	/* centers */
@@ -108,13 +101,13 @@ html, body {
     align-items:center;
     justify-content:center;
 	color: white;
-	outline-color: #0B2C2D;
+	outline-color: red;
 	outline-style: groove;
 	outline-width: 10px;
 	
-	animation: rectangle, white-text;
-	animation-duration:3s, 2s;
-	animation-delay:0s, 3s;
+	animation: rectangle, white-text, border;
+	animation-duration:3s, 2s, 4s;
+	animation-delay:0s, 3s, 2s;
 	
 }
 /* End Hexagon */
@@ -124,46 +117,124 @@ html, body {
 
 /* Start Rainbow*/
 @keyframes rainbow {
-	from {max-width: 40vw;}
-	to {max-width: 20vw;}
+	from {max-width: 20vw; height:0vh;}
+	to {max-width: 33.33vw; height: 11vh;}
 }
 #rainbow_box {
 	margin: auto;
-	height: 72vh;
-	max-width: 20vw;
+	height: 11vh;
+	max-width: 33.33vw;
 	animation-name: rainbow;
 	animation-duration: 4s;
 }
 .rainbow {
 	float: left;
+	/*width: 20%;*/
 	width: 33.33%;
 	height: 100%;
-	border: 2px;
-	border-color: black;
 }
 
 @keyframes r-one {
-	from {background-color: var(--K_color_header);};
-	to {var(--K_color_rainbow_one);}}
-#rainbow_one {background-color: var(--K_color_rainbow_one);
+	from {background-color: var(--K_color_header);}
+	to {background-color: var(--K_color_rainbow_one);}
+}
+#rainbow_one {
+	background-color: var(--K_color_rainbow_one);
 	animation-name: r-one;
-	animation-duration: 7s;}
+	animation-duration: 7s;
+	}
+
+@keyframes spacer-l {
+	from {background-color: var(--K_color_header);}
+	to {background-color: var(--K_color_rainbow_one);}
+}
+#spacer-l {
+	background-color: var(--K_color_rainbow_one);
+	animation-name: spacer-l;
+	animation-duration: 7s;
+	}
 
 @keyframes r-two {
 	from {background-color: var(--K_color_header);};
-	to {var(--K_color_rainbow_two);}}
-#rainbow_two {background-color: var(--K_color_rainbow_two);
+	to {background-color: var(--K_color_rainbow_two);}}
+#rainbow_two {
+	background-color: var(--K_color_rainbow_two);
 	animation-name: r-two;
 	animation-duration: 7s;}
 
+@keyframes spacer-r {
+	from {background-color: var(--K_color_header);}
+	to {background-color: var(--K_color_rainbow_one);}
+}
+#spacer-r {
+	background-color: var(--K_color_rainbow_one);
+	animation-name: spacer-r;
+	animation-duration: 7s;
+	}
+
 @keyframes r-three {
 	from {background-color: var(--K_color_header);};
-	to {var(--K_color_rainbow_three);}}
-#rainbow_three {background-color: var(--K_color_rainbow_three);
+	to {background-color: var(--K_color_rainbow_three);}}
+#rainbow_three {
+	background-color: var(--K_color_rainbow_three);
 	animation-name: r-three;
-	animation-duration: 7s;}
+	animation-duration: 7s;
+}
 /* End Rainbow*/
 
 
 
+/* Trapezoidal adventures*/
+@keyframes trapezoid {
+	from {max-width: 40vw; height:0vh;}
+	to {max-width: 20vw; height: 60vh;}
+}
+#trap_box {
+	margin: auto;
+	height: 60vh;
+	max-width: 20vw;
+	animation-name: trapezoid;
+	animation-duration: 4s;
+}
+.trapezoid {
+	float: left;
+	width: 33.33%;
+	height: 100%;
+}
+
+@keyframes t-one {
+	from {background-color: var(--K_color_header); 
+	transform: skew(0deg);};
+	to {var(--K_color_rainbow_one);
+	transform: skew(15deg);}
+	}
+#trap_l {
+	background-color: var(--K_color_rainbow_one);
+	animation-name: t-one;
+	animation-duration: 7s;
+	transform: skew(15deg);
+}
+
+@keyframes t-two {
+	from {background-color: var(--K_color_header);};
+	to {var(--K_color_rainbow_two);}}
+#trap_c {
+	background-color: var(--K_color_rainbow_two);
+	animation-name: t-two;
+	animation-duration: 7s;
+}
+
+@keyframes t-three {
+	from {background-color: var(--K_color_header);
+	transform: skew(0deg);};
+	to {var(--K_color_rainbow_three);
+	transform: skew(-15deg);}
+	}
+#trap_r {
+	background-color: var(--K_color_rainbow_three);
+	animation-name: t-three;
+	animation-duration: 7s;
+	transform: skew(-15deg);
+}
+/* When the fun stops stop*/
 
