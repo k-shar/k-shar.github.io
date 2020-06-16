@@ -116,7 +116,7 @@ html, body {
 	background-color: var(--K_color_hexagon);
 	color: white;
 	animation: rectangle;
-	animation-duration:6s;
+	animation-duration:5s;
 }
 /* End Hexagon */
 
@@ -197,7 +197,6 @@ html, body {
 
 #trap_box {
 	margin: auto;
-	height: 60vh;
 	max-width: 5vw;
 	animation-name: trapezoid;
 	animation-duration: 4s;
@@ -227,7 +226,7 @@ html, body {
 	animation-name: t-one;
 	animation-duration: 7s;
 	transform: skew(15deg);
-	z-index: 2;
+	z-index: 3;
 }
 
 @keyframes t-two {
