@@ -7,12 +7,19 @@
 	--K_color_rainbow_two: #c22f03;
 	--K_color_rainbow_three: #d5460d;
 	
+	--K_color_rainbow_base_one: #8e0b0b;
+	--K_color_rainbow_base_two: #e6610e;
+	
 	--K_color_footer: #0B2C2D;
 }
 
 @keyframes backdrop {
-	from {background-color: var(--K_color_header);}
-	to {background-color: var(--K_color_background);}
+	from {
+		background-color: var(--K_color_header);
+		}
+	to {
+		background-color: var(--K_color_background);
+		}
 }
 html, body {
 	font-family: 'Share Tech Mono', Monospace;
@@ -26,8 +33,12 @@ html, body {
 
 /* Start Hexagon */
 @keyframes hexagon {
-	from {margin-bottom: 0vh;}
-	to {margin-bottom: -3vh;}
+	from {
+		margin-bottom: 0vh;
+		}
+	to {
+		margin-bottom: -3vh;
+		}
 }
 #hexagon {
 	height: auto;
@@ -114,8 +125,14 @@ html, body {
 
 /* Start Rainbow*/
 @keyframes rainbow {
-	0% {max-width: 20vw; height:0vh;}
-	100% {max-width: 33.33vw; height: 11vh;}
+	0% {
+		max-width: 20vw; 
+		height:0vh;
+		}
+	100% {
+		max-width: 33.33vw; 
+		height: 11vh;
+		}
 }
 #rainbow_box {
 	margin: auto;
@@ -129,48 +146,17 @@ html, body {
 	width: 33.33%;
 	height: 100%;
 }
-
-@keyframes r-one {
-	from {background-color: var(--K_color_header);}
-	to {background-color: var(--K_color_rainbow_one);}
-}
-#rainbow_one {
-	background-color: var(--K_color_rainbow_one);
-	animation-name: r-one;
-	animation-duration: 7s;
+@keyframes r-mid {
+	0% {
+		background-color: var(--K_color_header);
+		}
+	100% {
+		background-color: var(--K_color_rainbow_two);
+		}
 	}
-
-
-#spacer-l {
-	background-color: var(--K_color_rainbow_one);
-	animation-name: spacer-l;
-	animation-duration: 7s;
-	}
-
-
-@keyframes r-two {
-	from {background-color: var(--K_color_header);}
-	to {background-color: var(--K_color_rainbow_two);}
-	}
-#rainbow_two {
+#rainbow_mid {
 	background-color: var(--K_color_rainbow_two);
-	animation-name: r-two;
-	animation-duration: 7s;}
-
-
-#spacer-r {
-	background-color: var(--K_color_rainbow_one);
-	animation-name: spacer-r;
-	animation-duration: 7s;
-	}
-
-
-@keyframes r-three {
-	from {background-color: var(--K_color_header);}
-	to {background-color: var(--K_color_rainbow_three);}}
-#rainbow_three {
-	background-color: var(--K_color_rainbow_three);
-	animation-name: r-three;
+	animation-name: r-mid;
 	animation-duration: 7s;
 }
 /* End Rainbow*/
@@ -198,7 +184,7 @@ html, body {
 }
 .trapezoid {
 	float: left;
-	width: 33.33%;
+	width: 20%;
 	height: 100%;
 }
 
@@ -250,5 +236,51 @@ html, body {
 	animation-duration: 7s;
 	transform: skew(-15deg);
 }
-/* When the fun stops stop*/
 
+@keyframes b-one {
+	0% {
+		background-color: var(--K_color_header); 
+		transform: skew(0deg);
+		margin-top: 0vh;
+	}
+	20% {
+		transform: skew(-30deg);
+	}
+	100% {
+		transform: skew(25deg);
+		background-color: var(--K_color_rainbow_base_one);
+		margin-top: 8vh;
+	}
+}
+#trap_bl {
+	background-color: var(--K_color_rainbow_base_one);
+	animation-name: b-one;
+	animation-duration: 7s;
+	transform: skew(25deg);
+	margin-top: 8vh;
+}
+
+@keyframes b-two {
+	0% {
+		background-color: var(--K_color_header); 
+		transform: skew(0deg);
+		margin-top: 0vh;
+	}
+	20% {
+		transform: skew(30deg);
+	}
+	100% {
+		transform: skew(-25deg);
+		background-color: var(--K_color_rainbow_base_two);
+		margin-top: 8vh;
+	}
+}
+#trap_br {
+	background-color: var(--K_color_rainbow_base_two);
+	animation-name: b-two;
+	animation-duration: 7s;
+	transform: skew(-25deg);
+	margin-top: 8vh;
+}
+
+/* When the fun stops stop*/
