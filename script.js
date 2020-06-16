@@ -6,8 +6,8 @@ $(document).ready(function(){
 	$("#hexagon").animate({marginTop: "5vh"}, 4000, 'swing');
 });
 
-var in_or_out = -1;
-var call_time = -1;
+var one_to_five = 1;
+var call_time = 1;
 
 var startTime = new Date().getTime();
 var node_one = document.getElementById("trap_l");
@@ -21,21 +21,21 @@ var spin = function () {
 		startTime = new Date().getTime();
 		call_time = 1;
 	}
-	if (in_or_out < 0) {
+	if (one_to_five === 1) {
 		var currTime = new Date().getTime();
 		var seconds = (currTime - startTime)/ 1000;
 		
-		new_rotation_l = (15 - seconds * 3 * Math.sqrt(seconds));
-		new_rotation_r = (-15 - seconds * -3 * Math.sqrt(seconds));
-		new_rotation_bl = (25 - seconds * 3 * Math.sqrt(seconds));
-		new_rotation_br = (-25 - seconds * -3 * Math.sqrt(seconds));
+		new_rotation_l = (15 - seconds * 7 * Math.sqrt(seconds));
+		new_rotation_r = (-15 - seconds * -7 * Math.sqrt(seconds));
+		new_rotation_bl = (25 - seconds * 6 * Math.sqrt(seconds));
+		new_rotation_br = (-25 - seconds * -6 * Math.sqrt(seconds));
 		
 		node_one.style.transform = "skew("+new_rotation_l+"deg)";
 		node_two.style.transform = "skew("+new_rotation_r+"deg)";
 		node_three.style.transform = "skew("+new_rotation_bl+"deg)";
 		node_four.style.transform = "skew("+new_rotation_br+"deg)";
 		
-		if (new_rotation_l > -15) {
+		if (seconds < 10) {
 			window.requestAnimationFrame(spin);
 		} else {
 			in_or_out = 1;
