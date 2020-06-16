@@ -44,7 +44,7 @@ html, body {
 	height: auto;
 	width: auto;
 	margin: auto;
-	
+	margin-top: 100vw;
 	margin-bottom: -3vh;
 	animation-name: hexagon;
 	animation-duration: 6s;
@@ -91,7 +91,7 @@ html, body {
 		background-color: rgba(184,42,72,1);
 		color: rgba(184,42,72,1);
 		
-		outline-color: #FF0000;
+		outline-color: #b80d0d;
 	}
 	100% {
 		color: rgba(255,255,255,1);
@@ -112,7 +112,7 @@ html, body {
 	outline-width: 10px;
 	
 	
-	outline-color: red;
+	outline-color: #b80d0d;
 	background-color: var(--K_color_hexagon);
 	color: white;
 	animation: rectangle;
@@ -258,7 +258,7 @@ html, body {
 	animation-name: t-three;
 	animation-duration: 7s;
 	transform: skew(-15deg);
-	z-index: 1;
+	z-index: 2;
 }
 
 @keyframes b-one {
@@ -284,6 +284,7 @@ html, body {
 	margin-top: 8vh;
 	z-index: 4;
 }
+
 
 @keyframes b-two {
 	0% {
