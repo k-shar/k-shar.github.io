@@ -13,3 +13,7 @@ var move_hex = function() {
 }
 
 move_hex();
+
+function refreshPage(){
+    window.location.reload();
+} 

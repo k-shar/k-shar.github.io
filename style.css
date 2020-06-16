@@ -129,15 +129,20 @@ html, body {
 		max-width: 20vw; 
 		height:0vh;
 		}
+	70% {
+		max-width: 52vw;
+		height: 10vh;
+	}
 	100% {
-		max-width: 33.33vw; 
-		height: 11vh;
+		max-width: 50vw; 
+		height: 8vh;
 		}
 }
 #rainbow_box {
+	padding-top: 1vh;
 	margin: auto;
-	height: 11vh;
-	max-width: 33.33vw;
+	height: 8vh;
+	max-width: 50vw;
 	animation-name: rainbow;
 	animation-duration: 4s;
 }
@@ -149,15 +154,22 @@ html, body {
 @keyframes r-mid {
 	0% {
 		background-color: var(--K_color_header);
+		color: var(--K_color_header);
+		}
+	90% {
+		background-color: var(--K_color_rainbow_two);
+		color: var(--K_color_rainbow_two);
 		}
 	100% {
-		background-color: var(--K_color_rainbow_two);
+		color: white;
 		}
 	}
 #rainbow_mid {
+	font-family: 'Share Tech Mono', Monospace;
 	background-color: var(--K_color_rainbow_two);
 	animation-name: r-mid;
 	animation-duration: 7s;
+	color: white;
 }
 /* End Rainbow*/
 
