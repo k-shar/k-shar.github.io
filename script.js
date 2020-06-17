@@ -41,10 +41,10 @@ var spin = function () {
 	var seconds = (currTime - startTime)/ 1000;
 	
 	
-	new_rotation_l = (one_start - seconds * a* 17 * Math.sqrt(seconds));
-	new_rotation_r = (two_start - seconds * b* 17 * Math.sqrt(seconds));
-	new_rotation_bl = (three_start - seconds * a* 16 * Math.sqrt(seconds));
-	new_rotation_br = (four_start - seconds * b* 16 * Math.sqrt(seconds));
+	new_rotation_l = (one_start - seconds * a* 27 * Math.sqrt(seconds));
+	new_rotation_r = (two_start - seconds * b* 27 * Math.sqrt(seconds));
+	new_rotation_bl = (three_start - seconds * a* 36 * Math.sqrt(seconds));
+	new_rotation_br = (four_start - seconds * b* 36 * Math.sqrt(seconds));
 	
 	node_one.style.transform = "skew("+new_rotation_l+"deg)";
 	node_two.style.transform = "skew("+new_rotation_r+"deg)";

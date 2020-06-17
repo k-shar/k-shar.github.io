@@ -1,7 +1,7 @@
 :root {
 	--K_color_background: #c4cbd5;
 	--K_color_header: #0B2C2D;
-	--K_color_hexagon: #b82a48;
+	--K_color_hexagon: #b4082c;
 	
 	--K_color_rainbow_one: #a61e1e;
 	--K_color_rainbow_two: #c22f03;
@@ -88,9 +88,8 @@ html, body {
 		outline-color: rgba(11,44,45,0);
 	}
 	90% {
-		background-color: rgba(184,42,72,1);
-		color: rgba(184,42,72,1);
-		
+		color: var(--K_color_hexagon);
+		background-color: var(--K_color_hexagon);
 		outline-color: #b80d0d;
 	}
 	100% {
@@ -138,7 +137,7 @@ html, body {
 		height: 8vh;
 		}
 }
-#rainbow_box {
+#button_div {
 	padding-top: -3vh;
 	margin: auto;
 	height: 8vh;
