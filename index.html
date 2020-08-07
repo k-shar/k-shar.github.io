@@ -1,39 +1,69 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-		<title>Pulse</title>
-		
 		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="stylesheet" href="phone_pos.css"  type="text/css">
+		<link rel="stylesheet" href="desktop_pos.css" type="text/css" media="screen and (min-aspect-ratio: 1/1)">
+		
+		
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<title>title</title>
 		<link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Share+Tech+Mono">
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	
+	<!--<body scroll="no" style="overflow: hidden">-->
 	<body scroll="no" style="overflow: hidden">
-	
-		<div id="hexagon">
-			<div id="triangle-up"></div>
-			<div id="rectangle">Hello World</div>
-			<div id="triangle-down"></div>
+		<div class="hat row"></div>
+		
+		<div class= "header_row row"> 
+			<div class="horizontal_spacer_for_header"></div>
+			<div class="header_cell">
+				<div class="vertical_spacer_for_header"></div>
+					<div id="header_title">title</div>
+				<div class="vertical_spacer_for_header"></div>
+			</div>
+			<div class="horizontal_spacer_for_header"></div>
 		</div>
 		
-		<div id="button_div">
-			<button type="submit" onClick="spin()" id="button" class="rainbow">Spin</button>
+		<div class="clamp_row row">
+			<div class="spacer_for_clamp"></div>
+				<div class="clamp" ></div>
+			<div class="spacer_for_clamp"></div>
 		</div>
-			
-		<div id="trap_box">
-			<div id="trap_bl" class="trapezoid"></div>
-			<div id="trap_l" class="trapezoid"></div>
-			<div id="trap_c" class="trapezoid"></div>
-			<div id="trap_r" class="trapezoid"></div>
-			<div id="trap_br" class="trapezoid"></div>
+		
+		<div class="link_row row">
+			<div class="spacer_for_link"></div>
+				<div class="link">
+					<a class="vertical_spacer_for_link link_one"></a>
+					<a id="header_title" class="link_one">a</a>
+					<a class="vertical_spacer_for_link link_one"></a>
+				</div>
+			<div class="spacer_for_link"></div>
+				<div class="link">
+					<a class="vertical_spacer_for_link link_two"></a>
+					<a id="header_title" class="link_two">b</a>
+					<a class="vertical_spacer_for_link link_two"></a>
+				</div>
+			<div class="spacer_for_link"></div>
+				<div class="link">
+					<a class="vertical_spacer_for_link link_three"></a>
+					<a id="header_title" class="link_three">c</a>
+					<a class="vertical_spacer_for_link link_three"></a>
+				</div>
+			<div class="spacer_for_link"></div>
+		</div>
+		
+		<div class="clamp_row row">
+			<div class="spacer_for_clamp"></div>
+				<div class="clamp" ><span id="clamp"></span></div>
+			<div class="spacer_for_clamp"></div>
 		</div>
 		
 		<script src="script.js"></script>
 		
 	</body>
-
 </html>

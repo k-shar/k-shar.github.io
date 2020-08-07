@@ -1,0 +1,55 @@
+body {
+	background: rgb(203, 215, 226);
+	color: black; 
+}
+
+p{
+	background: rgb(157, 177, 197);
+	padding: 4px;
+	margin: 4px;
+	font-size: 20px;
+}
+
+#header {
+	background: rgb(109, 136, 162);
+	padding: 8px;
+	margin: 8px;
+	font-size: 40px;
+	text-align: center;
+}
+
+.bordered {
+	background-color: rgb(36, 71, 104);
+	border: 5px groove rgb(1, 15, 29);
+}
+
+.columns {
+	width: auto;
+	height: 200px;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	overflow: auto;
+	height: 200px;
+}
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(69, 102, 134);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(15, 47, 77);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(1, 15, 29);
+}
