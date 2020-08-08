@@ -10,9 +10,18 @@ html, body {
 	text-align: center;
 	font-size: 4vh;
 }
+@keyframes hat {
+}
+@keyframes link_sides {
+}
+@keyframes link_inner {
+}
+@keyframes link {
+}
 
-.link {background-color: var(--K_color_link);}
-.hat {flex:0.5;}
+
+.link {background-color: var(--K_color_link); animation-duration: 5s; animation-name: link;}
+.hat {flex:0.5; animation-name: hat; animation-duration: 5s;}
 
 .header_row{flex: 1.5; display: flex;}
 .horizontal_spacer_for_header {flex:0.2;}
@@ -31,7 +40,8 @@ html, body {
 	align-items: center;
 	flex-direction: column;
 }
-.spacer_for_link {flex: 1; width: 20%;}
+.spacer_for_link {flex: 1; width: 20%; animation-name:link_sides; animation-duration: 5s;}
+.spacer_for_link.inner {flex: 1; width: 20%; animation-name:link_inner; animation-duration: 5s;}
 .link {
 	width: 80%;
 	flex: 5;

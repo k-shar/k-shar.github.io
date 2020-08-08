@@ -185,7 +185,7 @@ html, body {
 
 
 
-/* Trapezoidal adventures*/
+/* Trapezoidal */
 @keyframes trapezoid {
 	0% {
 		max-width: 0vw; 
@@ -311,7 +311,6 @@ html, body {
 	z-index: 3;
 }
 
-/* When the fun stops stop*/
 
 body { 
    opacity: 0;
