@@ -1,7 +1,0 @@
-html, body {
-	font-family: Share Tech Mono;
-}
-
-.link, .spacer_for_link{border: 1px solid red;}
-.row {border: 1px solid blue;}
-.vertical_spacer_for_header, .horizontal_spacer_for_header, .header, .spacer_for_header, .clamp, .spacer_for_clamp,.vertical_spacer_for_link {border: 1px solid green;}
