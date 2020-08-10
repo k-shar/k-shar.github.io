@@ -7,13 +7,13 @@ for (i = 0; i < x.length; i++) {
 var x = document.getElementsByClassName("link_two");
 var i;
 for (i = 0; i < x.length; i++) {
-	x[i].href = "https://www.nasa.gov/";
+	x[i].href = "index.html";
 }
 
 var x = document.getElementsByClassName("link_three");
 var i;
 for (i = 0; i < x.length; i++) {
-	x[i].href = "https://www.tesla.com/";
+	x[i].href = "https://www.nasa.gov/";
 }
 
 

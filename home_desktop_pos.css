@@ -155,3 +155,5 @@ html, body {
 
 .spacer_for_link {background-color: var(--K_color_background);animation-name: link_sides; animation-duration: 5s;}
 .spacer_for_link.inner {background-color: var(--K_color_clamp);animation-name: link_inner; animation-duration: 5s; border: none;}
+
+.inner.top {display: block}

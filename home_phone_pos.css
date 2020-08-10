@@ -11,16 +11,35 @@ html, body {
 	font-size: 4vh;
 }
 @keyframes hat {
+	from { flex:10}
+	90% {flex: 0.6;}
+	to {flex: 0.5;}
 }
-@keyframes link_sides {
+@keyframes clamp_left {
+	from {transform: skew(0deg);}
+	90% {transform: skew(-130deg);}
+	to {transform: skew(-120deg);}
 }
-@keyframes link_inner {
+@keyframes clamp_right {
+	from {transform: skew(0deg);}
+	90% {transform: skew(130deg);}
+	to {transform: skew(120deg);}
 }
-@keyframes link {
+.clamp.top.right{ animation-duration: 5s; animation-name: clamp_right;transform: skew(120deg);}
+.clamp.top.left{ animation-duration: 5s; animation-name: clamp_left;transform: skew(-120deg);}
+.clamp.base.right{ animation-duration: 5s; animation-name: clamp_left;transform: skew(-120deg); }
+.clamp.base.left{ animation-duration: 5s; animation-name: clamp_right;transform: skew(120deg);}
+
+@keyframes spacer_base {
+	from {transform: rotateY(0deg); }
+	90% {transform: rotateY(-60deg);}
+	to {transform:transform: rotateY(0deg);}
 }
+.inner.top {display: none}
+.inner.base {animation-duration: 5s; animation-name: spacer_base; transform: rotateY(-55deg);}
 
 
-.link {background-color: var(--K_color_link); animation-duration: 5s; animation-name: link;}
+.link {background-color: var(--K_color_link); animation-duration: 5s; animation-name: link; z-index: 10;}
 .hat {flex:0.5; animation-name: hat; animation-duration: 5s;}
 
 .header_row{flex: 1.5; display: flex;}
@@ -40,8 +59,8 @@ html, body {
 	align-items: center;
 	flex-direction: column;
 }
-.spacer_for_link {flex: 1; width: 20%; animation-name:link_sides; animation-duration: 5s;}
-.spacer_for_link.inner {flex: 1; width: 20%; animation-name:link_inner; animation-duration: 5s;}
+.spacer_for_link {flex: 1; width: 20%; border: 0;}
+.spacer_for_link.inner {flex: 1; width: 30%; }
 .link {
 	width: 80%;
 	flex: 5;
@@ -50,3 +69,11 @@ html, body {
 }
 .vertical_spacer_for_link {flex: 1;}
 
+@keyframes mini_clamps {
+	from {width: 20%;}
+	90% {width: 70%;}
+	to {width: 40%;}
+}
+.spacer_for_link:not(.inner) {
+    animation-duration: 5s; animation-name: mini_clamps; width: 40%;
+}
