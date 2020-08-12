@@ -1,0 +1,61 @@
+body{ display: flex; flex-direction: column;}
+
+.header {
+	flex: 2; 
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+}
+.pediment{
+	flex: 1;
+	height: 0;
+	border-left: 45vw solid transparent;
+	border-right: 45vw solid transparent;
+	border-bottom: 7vh solid;
+}
+.cornice{
+	height: 5vh;
+	width: 90vw;
+}
+
+
+.frieze{
+	flex: 1; 
+	display: flex; 
+	flex-direction: row;
+}
+.architrave {flex: 1;}
+.gap{flex:3; display: flex;}
+.architrave_detail{flex: 1;}
+.architrave_detail.left {transform: skew(-64deg);}
+.architrave_detail.right {transform: skew(64deg);}
+
+.center_gap{flex: 2;}
+
+
+.main {flex: 10; display: flex;}
+
+.content{flex: 3; display: flex;  flex-direction: column; align-items: center;}
+.top_spacer {flex: 1; width: 100%;}
+.link {flex: 2;  width: 90%;}
+.spacer {flex: 1; width: 30%;}
+
+.column{flex: 1; display: flex; flex-direction: column;}
+
+.capital{
+	border-top: 50px solid;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+}
+.pillars{flex: 9; display: flex;}
+.pillar{
+	flex: 1;
+	margin: 0 10px;
+}
+.plinth{
+	border-bottom: 50px solid;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	height: 0;
+}
