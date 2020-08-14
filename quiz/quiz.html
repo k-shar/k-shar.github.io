@@ -2,14 +2,19 @@
 <html>
   
 	<head>
+		<link rel="stylesheet" href="quiz_styles_blue.css" type="text/css" title="red">
+		<!--<link rel="alternate stylesheet" href="quiz_styles_blue.css" type="text/css" title="blue">-->
+		
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width", user-scalable="no" ,initial-scale=1">
 		<title>Quiz - Select</title>
 		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
-		<link rel="stylesheet" href="quiz_styles.css" type="text/css">
 		
-		<link rel="stylesheet" href="quiz_phone_pos.css"  type="text/css">
-		<link rel="stylesheet" href="quiz_desktop_pos.css" type="text/css" media="screen and (min-aspect-ratio: 1/1)">
+		
+		
+		<link rel="stylesheet" href="quiz_pos.css"  type="text/css">
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Share+Tech+Mono">
 	</head>
   
   
@@ -20,13 +25,17 @@
 			<div class="cornice"></div>
 		</div>	
 		<div class="frieze">
-			<div class="architrave"></div>
+			<div class="architrave"> 
+				<button onclick="makeRed()">Red</button> 
+			</div>
 			<div class="gap">
 				<div class="architrave_detail left"></div>
 				<div class="center_gap"></div>
 				<div class="architrave_detail right"></div>
 			</div>
-			<div class="architrave"></div>
+			<div class="architrave">
+				<button onclick="makeBlue()">Blue</button> 
+			</div>
 		</div>
 		
 		<div class="main">
@@ -41,13 +50,13 @@
 			</div>
 			
 			<div class="content">
-				<div class="top_spacer"></div>
+				<div class="top_spacer"><p>Quizes</p></div>
 				<div class="spacer"></div>
-				<div class="link"></div>
+				<div class="link"><p>Quiz 1</p></div>
 				<div class="spacer"></div>
-				<div class="link"></div>
+				<div class="link"><p>Quiz 1</p></div>
 				<div class="spacer"></div>
-				<div class="link"></div>
+				<div class="link"><p>Quiz 1</p></div>
 				<div class="spacer"></div>
 			</div>
 			
@@ -61,5 +70,8 @@
 			</div>
 			
 		</div>
+		
+		<script src="style_switcher.js"></script>
+		
 	</body>
 </html>
