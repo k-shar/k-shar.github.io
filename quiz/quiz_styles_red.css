@@ -6,7 +6,27 @@ html, body {
 	background-color: var(--K_color_background);
 	font-family: Share Tech Mono;
 }
+button {
+	width: 100%;
+	height: 100%;
+	background-color: var(--K_color_rainbow_one); /* Green */
+	border: none;
+	color: white;
+	font-size: 2vh;
+	font-family: Share Tech Mono;
+}
+button {
+  transition-duration: 0.4s;
+}
 
+button.red:hover {
+  background-color: var(--K_color_rainbow_two)
+  color: white;
+}
+button.blue:hover {
+  background-color: #134463;
+  color: white;
+}
 :root {
 	--K_color_background: #c4cbd5;
 	--K_color_header: #0B2C2D;
