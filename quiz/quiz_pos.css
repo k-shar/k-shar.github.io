@@ -1,4 +1,51 @@
-body{ display: flex; flex-direction: column;}
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+body{ 
+	display: flex; 
+	flex-direction: column;
+	animation: fadeInAnimation ease 3s ;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+a {text-decoration: none;}
+@keyframes pillar_l1{
+	from {transform: skew(0deg);}
+	50% {transform: skew(-50deg);}
+	90% {transform: skew(40deg);}
+	to {transform: skew(0deg);}
+}
+@keyframes pillar_l2{
+	from {transform: skew(0deg);}
+	10% {transform: skew(-50deg);}
+	90% {transform: skew(40deg);}
+	to {transform: skew(0deg);}
+}
+@keyframes pillar_r1{
+	from {transform: skew(0deg);}
+	10% {transform: skew(50deg);}
+	90% {transform: skew(-40deg);}
+	to {transform: skew(0deg);}
+}
+@keyframes pillar_r2{
+	from {transform: skew(0deg);}
+	50% {transform: skew(50deg);}
+	90% {transform: skew(-40deg);}
+	to {transform: skew(0deg);}
+}
+
+.pillar.l1 {animation: pillar_l1;animation-duration: 5s;}
+.pillar.l2 {animation: pillar_l2;animation-duration: 5s;}
+.pillar.r1 {animation: pillar_r1;animation-duration: 5s;}
+.pillar.r2 {animation: pillar_r2;animation-duration: 5s;}
+
+
 
 .header {
 	flex: 1.9; 
@@ -28,19 +75,39 @@ body{ display: flex; flex-direction: column;}
 .architrave {flex: 1;}
 .gap{flex:3; display: flex;}
 .architrave_detail{flex: 1;}
-.architrave_detail.left {transform: skew(-64deg);}
-.architrave_detail.right {transform: skew(64deg);}
+
+@keyframes a_l {
+	from {transform: skew(0deg)}
+	90% {transform: skew(80deg)}
+	to {transform: skew(-64deg)}
+}
+@keyframes a_r {
+	from {transform: skew(0deg)}
+	90% {transform: skew(-80deg)}
+	to {transform: skew(64deg)}
+}
+.architrave_detail.left {transform: skew(-64deg);animation:a_l;animation-duration:5s;}
+.architrave_detail.right {transform: skew(64deg);animation:a_r;animation-duration:5s;}
 
 .center_gap{flex: 2;}
 
-
-.main {flex: 10; display: flex;}
+@keyframes main {from{flex:0;} 90%{flex:12;} to{flex:10;}}
+.main {flex: 10; display: flex;animation:main;animation-duration:5s;}
 
 .content{flex: 3; display: flex;  flex-direction: column; align-items: center;}
 .top_spacer {flex: 1.5; width: 100%;}
 .link {flex: 2;  width: 90%; display: flex; justify-content: center; align-items: center; font-size: 5vh;}
 .spacer {flex: 1; width: 30%;}
 
+.parent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.child {
+	display: flex;
+	color: white;
+}
 .column{flex: 1; display: flex; flex-direction: column;}
 
 .capital{
@@ -62,3 +129,7 @@ body{ display: flex; flex-direction: column;}
 	margin-top: -1px;
 }
 
+.animate-in {
+    -webkit-animation: fadeIn 3s ease-in;
+    animation: fadeIn 3s ease-in;
+}
