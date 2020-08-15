@@ -28,7 +28,7 @@ a {
 .intro {
 	display: flex;
 	flex-direction: row;
-	width: 60%;
+	width: 90%;
 }
 .find {
 	padding: 1em;

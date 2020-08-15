@@ -17,26 +17,26 @@ body{
 a {text-decoration: none;}
 @keyframes pillar_l1{
 	from {transform: skew(0deg);}
+	8% {transform: skew(40deg);}
 	50% {transform: skew(-50deg);}
-	90% {transform: skew(40deg);}
 	to {transform: skew(0deg);}
 }
 @keyframes pillar_l2{
 	from {transform: skew(0deg);}
-	10% {transform: skew(-50deg);}
-	90% {transform: skew(40deg);}
+	40% {transform: skew(-50deg);}
+	70% {transform: skew(40deg);}
 	to {transform: skew(0deg);}
 }
 @keyframes pillar_r1{
 	from {transform: skew(0deg);}
-	10% {transform: skew(50deg);}
-	90% {transform: skew(-40deg);}
+	40% {transform: skew(50deg);}
+	70% {transform: skew(-40deg);}
 	to {transform: skew(0deg);}
 }
 @keyframes pillar_r2{
 	from {transform: skew(0deg);}
+	8% {transform: skew(-40deg);}
 	50% {transform: skew(50deg);}
-	90% {transform: skew(-40deg);}
 	to {transform: skew(0deg);}
 }
 

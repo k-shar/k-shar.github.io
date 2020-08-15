@@ -1,5 +1,5 @@
 var x = document.getElementById("quiz_one");
-x.href = "https://github.com/k-shar/k-shar.github.io";
+x.href = "quizes/quiz_template.html";
 
 
 var x = document.getElementById("quiz_two");

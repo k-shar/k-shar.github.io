@@ -1,0 +1,41 @@
+:root { 
+	--K_color_background: #c4cbd5;
+	--K_color_header: #0B2C2D;
+	--K_color_hexagon: #b4082c;
+	
+	--K_color_rainbow_one: #a61e1e;
+	--K_color_rainbow_two: #c22f03;
+	--K_color_rainbow_three: #d5460d;
+	
+	--K_color_rainbow_base_one: #8e0b0b;
+	--K_color_rainbow_base_two: #e6610e;
+	
+	--K_color_footer: #0B2C2D;
+}
+
+
+html, body {
+	font-family: 'Share Tech Mono', Monospace;
+	margin: 0vw;
+	background-color: var(--K_color_background);
+	animation-name: backdrop;
+	animation-duration: 7s;
+}
+
+
+.container{display: flex; flex-direction: column; height: 100vh; align-items: center;}
+
+.end_spacer {
+	flex: 1;
+	background-color: var(--K_color_rainbow_three);
+	width: 20%;
+}
+.question {
+	flex: 1;
+}
+.yes {
+	flex: 1;
+}
+.no {
+	flex: 1;
+}
