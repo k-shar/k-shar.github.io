@@ -11,20 +11,34 @@
 		<title>Quiz Template</title>
 	</head>
 	
-	<body scroll="no">
+	<body scroll="no" style="overflow: hidden;" onload="init()">
   
 		<div class="container">
 			
-			<div class="end_spacer"></div>
-			<div class="question"><span id="Question">ajguhsoaghsiohgiowehgioshoighisohgoehgioeshogihs</span></div>
+			<div class="end_spacer back"><span id="question_number">Question 1/n</span></div>
+			<div class="question">
+				<span id="question">Question Goes Here</span>
+			</div>
 			<div class="spacer"></div>
-			<div class="yes"><span class="yes">Yes</span></div>
+			<div class="center">
+			
+				<div onclick="zero()" class="yes">
+					<span id="yes">Yes</span>
+				</div>
+				
+				<div class="center_s"></div>
+				
+				<div onclick="one()" class="no">
+					<span id="no">No</span>
+				</div>
+				
+			</div>
 			<div class="spacer"></div>
-			<div class="no"><span id="no">No</span></div>
-			<div class="end_spacer"></div>
+			<div class="end_spacer"><a id="back">Quiz Selection</a></div>
 			
 			
 		</div>
   
+		<script src="quiz_template.js"></script>
 	</body>
 </html>
