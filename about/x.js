@@ -1,54 +1,21 @@
 var questions = [
-	"Do you like Animals?", 
-	"Do you own any pets?",
-	"Are you an animal?", 
-	"Are you wearing cat ears?",
-	"do you know what a furry is?",
-	"If you had to choose what animal would you want to be?",
-	"Have you ever had a dream about an animal?",
-	"If you had the chance, Would you kill someone if you were told they were a furry, but there was no proof they were a furry?",
-	"Would you rather use emojis or punctuation faces",
-	"Have you ever worn a cholker 0.0?",
-	"would you wear a fur suit for 20 mins if you got paid £1,000?",
-	"READY FOR YOUR RESULT???"
+	"sneaky sneak"
 ];
 
 var correct = [
-	"Yess", 
-	"YOU BET!",
-	"yes o.o how did you know",
-	"IM WEARING SOME RN",
-	"...yes",
-	"fox rawr xD",
-	"yes i SUPPOSE...",
-	"no uwu",
-	"punctuation xD >.< uwu :3",
-	"...maybe",
-	"yessss pay pal me that breaddd UWU",
-	"LETS GOOO"
+	"hush hush"
 ] 
 
 var dummy = [
-	"Nope ew",
-	"nope",
-	"I have no soul",
-	"no, not yet ;)",
-	"no sniff",
-	"nya nya kitten please uwu",
-	"no ;-;",
-	"yes im a bloodthirsty murderer fbi please arrest me",
-	"Emojis all the way",
-	"nooope",
-	"no -.-",
-	"BORN READY!"
+	"secret secret"
 ]
 
 function results(points) {
 
 	document.getElementById('x').style.display = 'none';
 	document.getElementById('y').style.display = 'none';
-	question.innerHTML = "YOU ARE A CERTIFIED FURRY";
-	z.innerHTML = "Without a DOUBT you secretly own a fur-suit or DESPERATLY want one, you embrace your fursona when nobodys looking, you wish furry tails were socialy acceptable and you secretly meow when drinking milk :3 dont be ashamed its natural uwu ONE OF US";
+	question.innerHTML = "YOU ARE CERTIFIED NOT A FURRY";
+	z.innerHTML = "You would never DREAM of wearing animal ears of a fluffy tail, not a drop of fur flows through your blood, you would take a shotgun to a furry if you had the SLIGHTEST furry suspicion they had dabbled down the rabbit hole of furry cosplay. arm yourself soldier they surround us. STAY STRONG";
 	u.style.flexDirection = "row";
 	z.style.padding = "5vh";
 }
