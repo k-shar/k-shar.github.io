@@ -13,7 +13,7 @@
 	--K_color_footer: #0B2C2D;
 }
 
-
+a {color: white; font-size: 2vh;}
 html, body {
 	height: 100%;
 	overflow: hidden;
@@ -27,7 +27,7 @@ html, body {
 }
 
 .container{display: flex; flex-direction: column; height: 100vh; align-items: center;}
-#back {display: flex; font-size: 3vh;}
+#back {display: flex;}
 .end_spacer {
 	flex: 1;
 	background-color: var(--K_color_rainbow_three);
@@ -45,6 +45,7 @@ html, body {
 	font-size: 4vh;
 	word-wrap: break-word;
 	text-align: center;
+	padding: 2vh;
 }
 #question {display: flex; padding: 0.3vh;}
 #question_number {font-size: 4vh;}
@@ -74,6 +75,9 @@ html, body {
 	display: flex; align-items: center; justify-content: center;
 	font-size: 4vh;
 	height: 50%;
+	padding: 2vh;
+	word-wrap: break-word;
+	text-align: center;
 }
 .no {	
 	flex: 2;
@@ -82,4 +86,7 @@ html, body {
 	display: flex; align-items: center; justify-content: center;
 	font-size: 4vh;
 	height: 50%;
+	padding: 2vh;
+	word-wrap: break-word;
+	text-align: center;
 }

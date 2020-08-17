@@ -43,6 +43,7 @@ html, body {
 	font-size: 4em;
 	word-wrap: break-word;
 	text-align: center;
+	padding: 2vw;
 }
 #question {display: flex; padding: 0.3em;}
 .spacer {
@@ -64,6 +65,9 @@ html, body {
 	width: 60%;
 	display: flex; align-items: center; justify-content: center;
 	font-size: 4vw;
+	padding: 2vw;
+	word-wrap: break-word;
+	text-align: center;
 }
 .no {	
 	flex: 2;
@@ -71,4 +75,7 @@ html, body {
 	width: 60%;
 	display: flex; align-items: center; justify-content: center;
 	font-size: 4vw;
+	padding: 2vw;
+	word-wrap: break-word;
+	text-align: center;
 }
