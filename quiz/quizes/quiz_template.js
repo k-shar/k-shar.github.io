@@ -17,21 +17,23 @@ var dummy = [
 ]
 
 function results(points) {
-	console.log(points);
 	if (points < questions.length+1) {
 		document.getElementById('x').style.display = 'none';
 		document.getElementById('y').style.display = 'none';
 		question.innerHTML = "FULL MARKS WELL DONEEE";
-		
+		z.innerHTML = "FULL MARKS WELL DONEEE";
 	}
 	if (points < questions.length) {
 		question.innerHTML = "2 MARKS WELL DONEEE";
+		z.innerHTML = "2 Mark Text here";
 	}
 	if (points < questions.length-1) {
 		question.innerHTML = "1 mark jeez did u try to fail";
+		z.innerHTML = "1 mark TEXT HERE";
 	}
 	if (points = 0) {
 		question.innerHTML = "wht how why what?";
+		z.innerHTML = "0 marks here";
 	}
 }
 
