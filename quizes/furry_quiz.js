@@ -42,8 +42,8 @@ var dummy = [
 
 function results(points) {
 
-	document.getElementById('x').style.display = 'none';
-	document.getElementById('y').style.display = 'none';
+	$("#x").css("display", "none");
+	$("#y").css("display", "none");
 	question.innerHTML = "YOU ARE A CERTIFIED FURRY";
 	z.innerHTML = "Without a DOUBT you secretly own a fur-suit or DESPERATLY want one, you embrace your fursona when nobodys looking, you wish furry tails were socialy acceptable and you secretly meow when drinking milk :3 dont be ashamed its natural uwu ONE OF US";
 	u.style.flexDirection = "row";
