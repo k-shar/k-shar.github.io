@@ -5,19 +5,34 @@ var questions = [
 ];
 
 var correct = [
-	"yees", 
-	"hello",
-	"longlong long long long long long long long long "
+	"correct", 
+	"this one",
+	"I NEED CLICKING"
 ] 
 
 var dummy = [
-	"gyyggi",
-	"uubijui",
-	"guiuhuh"
+	"WRONG",
+	"nope",
+	"pls no papi"
 ]
 
 function results(points) {
 	console.log(points);
+	if (points < questions.length+1) {
+		document.getElementById('x').style.display = 'none';
+		document.getElementById('y').style.display = 'none';
+		question.innerHTML = "FULL MARKS WELL DONEEE";
+		
+	}
+	if (points < questions.length) {
+		question.innerHTML = "2 MARKS WELL DONEEE";
+	}
+	if (points < questions.length-1) {
+		question.innerHTML = "1 mark jeez did u try to fail";
+	}
+	if (points = 0) {
+		question.innerHTML = "wht how why what?";
+	}
 }
 
 //  CODE that wont need changing //
