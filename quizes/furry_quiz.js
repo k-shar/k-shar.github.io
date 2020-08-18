@@ -1,5 +1,5 @@
 var questions = [
-	"Do you like Animals?", 
+	"Do you like Animals? uwu", 
 	"Do you own any pets?",
 	"Are you an animal?", 
 	"Are you wearing cat ears?",
