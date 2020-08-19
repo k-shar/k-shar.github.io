@@ -12,9 +12,7 @@ var dummy = [
 	"incorrect answers go here",
 	"dummy.length must equal questions.length"
 ]
-/* IMPORTANT - REMEMBER TO LINK TO THIS JS FILE FROM THE HTML 
-	WITH THE SCRIPT TAG AT THE BOTTOM 	*/
-	
+
 function results(points) {
 
 	$("#x").css("display", "none");

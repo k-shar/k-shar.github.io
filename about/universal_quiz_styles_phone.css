@@ -48,7 +48,7 @@ html, body {
 	padding: 2vh;
 }
 #question {display: flex; padding: 0.3vh;}
-#question_number {font-size: 4vh;}
+#question_number {font-size: 4vw;}
 .spacer {
 	flex: 1;
 	background-color: var(--K_color_rainbow_two);

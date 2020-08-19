@@ -23,7 +23,7 @@ p {
 	font-size: 2em;
 }
 a {
-	font-size: 2em;
+	font-size: 1.4em;
 }
 .intro {
 	display: flex;
@@ -35,4 +35,10 @@ a {
 	border: solid black 2px;
 	flex: 1;
 }
-.para {padding: 3em;}
+.para {padding: 3em; }
+
+#image {
+	background-image: url("tbhc_image.jpg");
+	width: 366px;
+	height: 647px;
+}
