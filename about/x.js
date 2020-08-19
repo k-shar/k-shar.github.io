@@ -12,8 +12,8 @@ var dummy = [
 
 function results(points) {
 
-	document.getElementById('x').style.display = 'none';
-	document.getElementById('y').style.display = 'none';
+	$("#x").css("display", "none");
+	$("#y").css("display", "none");
 	question.innerHTML = "YOU ARE CERTIFIED NOT A FURRY";
 	z.innerHTML = "You would never DREAM of wearing animal ears of a fluffy tail, not a drop of fur flows through your blood, you would take a shotgun to a furry if you had the SLIGHTEST furry suspicion they had dabbled down the rabbit hole of furry cosplay. arm yourself soldier they surround us. STAY STRONG";
 	u.style.flexDirection = "row";

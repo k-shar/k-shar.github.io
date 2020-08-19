@@ -9,9 +9,10 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>Quiz Template</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	
-	<body scroll="no" style="overflow: hidden;" onload="init()">
+	<body scroll="yes" style="overflow: hidden;" onload="init()">
   
 		<div class="container">
 			
@@ -19,7 +20,7 @@
 			<div class="question">
 				<span id="question">Question Goes Here</span>
 			</div>
-			<div class="spacer"></div>
+			<div class="spacer" id="q"></div>
 			<div class="center" id="u">
 			
 				<div onclick="zero()" class="yes" id="x">
@@ -35,7 +36,7 @@
 				</div>
 				
 			</div>
-			<div class="spacer"></div>
+			<div class="spacer" id="p"></div>
 			<div class="end_spacer"><a id="back">Quiz Selection</a></div>
 			
 			

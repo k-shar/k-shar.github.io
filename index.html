@@ -1,31 +1,41 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-
-  <head>
-  <link rel="stylesheet" href="style-sheet.css" type="text/css">
-  <meta charset="utf-8">
-  <title>Website</title>
-  </head>
-  
-  <body>
-  
-    <h1 id="header" class="bordered">Lorem ipsum</h1>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<title>Pulse</title>
+		
+		<link rel="stylesheet" href="index/index_styles.css" type="text/css">
+		<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Share+Tech+Mono">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
 	
-	<div class="columns bordered" id="demo">
-		<div  class="column">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<body scroll="no" style="overflow: hidden">
+	
+		<div id="hexagon">
+			<span onclick="transitionToPage('links/links.html')">
+				<div id="triangle-up"></div>
+				<div id="rectangle"><span id="header_say">Hello World</span></div>
+				<div id="triangle-down"></div>
+			</span>
 		</div>
-		<div  class="column">
-			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui do inventore veritatis</p>	
+		
+		<div id="button_div">
+			<button type="submit" onClick="spin()" id="button" class="rainbow">Spin</button>
 		</div>
-		<div  class="column">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis convallis tellus id interdum velit laoreet id. Nunc sed augue lacus viverra vitae congue eu. Vitae et leo duis ut diam quam nulla porttitor. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Malesuada fames ac turpis egestas. Malesuada proin libero nunc consequat interdum varius sit amet mattis.</p>
+			
+		<div id="trap_box">
+			<div id="trap_bl" class="trapezoid"></div>
+			<div id="trap_l" class="trapezoid"></div>
+			<div id="trap_c" class="trapezoid"></div>
+			<div id="trap_r" class="trapezoid"></div>
+			<div id="trap_br" class="trapezoid"></div>
 		</div>
-	</div>
-	<script>
-		doument.getElementById("demo").innerHTML = "test";
-	</script>
+		
+		<script src="index/index_script.js"></script>
+		
 	</body>
-	
-  
+
 </html>
