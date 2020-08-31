@@ -47,7 +47,7 @@ p {color: white;}
 
 .column{background-color: green; background-color: var(--K_color_background);}
 .content{background-color: var(--K_color_background);}
-.top_spacer{ background-color: var(--K_color_rainbow_base_one); display: flex; justify-content: center; align-items: center; font-size: 4vh; border:solid 2px black;}
+.top_spacer{ background-color: var(--K_color_rainbow_base_one); display: flex; justify-content: center; align-items: center; font-size: 4vw; border:solid 2px black;}
 .link{ background-color: var(--K_color_rainbow_one); border:solid 1px black;}
 .spacer{ background-color: var(--K_color_rainbow_two);}
 

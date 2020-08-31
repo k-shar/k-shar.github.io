@@ -1,16 +1,19 @@
 var questions = [
-	"Enter Questions Here", 
-	"Separate New questions with commas"
+	"If a grenade exploded would you be safer:", 
+	"Can you see the Great Wall of china from space?",
+	"If you dropped a penny off of the Eiffel Tower would it kill someone?"
 ];
 
 var correct = [
-	"Correct answers to the questions go here", 
-	"correct.length must equal questions.length"
+	"on Land", 
+	"No",
+	"No"
 ] 
 
 var dummy = [
-	"incorrect answers go here",
-	"dummy.length must equal questions.length"
+	"in Water",
+	"Yes",
+	"Yes"
 ]
 
 function results(points) {
@@ -20,8 +23,22 @@ function results(points) {
 	$("#p").css("display", "none");
 	$("#q").css("display", "none");
 	
-	question.innerHTML = "Title for Results go here";
-	z.innerHTML = "Results paragraph goes here";
+	if (points == questions.length) {
+		question.innerHTML = "Full Marks!";
+		z.innerHTML = "Congratulations!";
+	}
+	if (points == 1) {
+		question.innerHTML = "Better luck next time!";
+		z.innerHTML = "You scored 1 point";
+	}
+	if (points == 0) {
+		question.innerHTML = "Better luck next time!";
+		z.innerHTML = "You scored 0 points";
+	}
+	else {
+		question.innerHTML = "Almost There!";
+		z.innerHTML = "You scored " + points + " points!";
+	}
 	u.style.flexDirection = "row";
 	z.style.padding = "5vh";
 	z.style.fontSize = "3vh";

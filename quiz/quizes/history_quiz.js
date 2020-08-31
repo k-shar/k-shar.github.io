@@ -1,16 +1,28 @@
 var questions = [
-	"Enter Questions Here", 
-	"Separate New questions with commas"
+	"What happened first?", 
+	"What happened first?",
+	"What happened first?",
+	"What happened first?",
+	"What happened first?",
+	"What happened first?"
 ];
 
 var correct = [
-	"Correct answers to the questions go here", 
-	"correct.length must equal questions.length"
+	"Apollo 11 lands on the moon", 
+	"BBC Founded",
+	"First Color photograph",
+	"Nintendo Wii Released",
+	"Ford Model T Released",
+	"The Vietnam War ends"
 ] 
 
 var dummy = [
-	"incorrect answers go here",
-	"dummy.length must equal questions.length"
+	"Disney world first opens",
+	"Pluto was discovered",
+	"Nazi Party Formed",
+	"First IPhone",
+	"Boy Scouts of America Founded",
+	"Rubik's Cube Debuts"
 ]
 /* IMPORTANT - REMEMBER TO LINK TO THIS JS FILE FROM THE HTML 
 	WITH THE SCRIPT TAG AT THE BOTTOM 	*/
