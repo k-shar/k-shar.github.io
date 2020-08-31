@@ -34,7 +34,7 @@ function results(points) {
 	$("#p").css("display", "none");
 	$("#q").css("display", "none");
 	
-	if (points == questions.length) {
+	if (points == questions.length-1) {
 		question.innerHTML = "Full Marks!";
 		z.innerHTML = "Congratulations!";
 	}
